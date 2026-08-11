@@ -1,4 +1,4 @@
-name: Refresh live assets
+name: Refresh contribution skyline
 
 on:
   schedule:
@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Regenerate skyline.svg and stats.svg
+      - name: Regenerate skyline.svg
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USERNAME: abhinav0singh
@@ -29,5 +29,5 @@ jobs:
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh contribution skyline + stats"
-          file_pattern: "assets/skyline.svg assets/stats.svg"
+          commit_message: "chore: refresh contribution skyline"
+          file_pattern: "assets/skyline.svg"
