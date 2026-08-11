@@ -1,0 +1,33 @@
+name: Refresh live assets
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # once a day
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate skyline.svg and stats.svg
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: abhinav0singh
+        run: python3 scripts/generate.py
+
+      - name: Commit if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh contribution skyline + stats"
+          file_pattern: "assets/skyline.svg assets/stats.svg"

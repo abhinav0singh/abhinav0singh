@@ -1,4 +1,4 @@
-<img src="./assets/hero.svg" alt="Abhinav Singh — systems, quantitative risk, machine learning" width="100%" />
+<img src="./assets/hero.svg" alt="Abhinav Singh — backend engineer" width="100%" />
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
@@ -13,17 +13,20 @@
 
 ### Hello — I'm Abhinav
 
-I write software that has to be **fast**, and models that have to be **honest**.
+I'm a pre-final year Information Technology student at Manipal Institute of Technology, and a backend engineer who cares about correctness under failure more than almost anything else.
 
-Those two instincts pull in different directions, which is exactly why I like them. A server that drops p99 latency by 40% and a risk model that admits how much it doesn't know are the same craft wearing different clothes: you measure, you don't flatter yourself, and you ship the version you can defend.
+My banking ledger models money as an **immutable double-entry ledger** — balances are derived, never mutated — with **idempotency keys** so a retried request can never double-charge anyone. TitanServer is the same instinct pointed at the systems layer: I profiled it under load, found sockets dying mid-write, fixed the shutdown path, then chased the next bottleneck, and the next — **3,084 → 42,558 req/s**, p99 latency **6,691 ms → 15 ms**.
 
-Right now that looks like a C++ server framework, a Monte Carlo engine for tail risk, and a slow, stubborn walk through machine learning.
-
-**Open to** internships, backend / systems roles, and quant-adjacent engineering.
+**Seeking:** a Software Engineering internship — reliable, developer-facing financial infrastructure.
 
 </td>
 </tr>
 </table>
+
+- 🎓 B.Tech Information Technology, **Manipal Institute of Technology, Bengaluru** — CGPA 8.52/10, Class of 2028
+- 🧑‍🏫 **EducationLead, Quantus** (Quantum Computing Club) — ran workshops, mentored juniors, coordinated events
+- 📜 **Certified in Data Analysis** — Python & Statistics for Financial Analysis, HKUST via Coursera
+- 🏆 **300+ DSA problems solved**, 100+ on LeetCode — graphs, trees, DP, greedy, binary search
 
 <img src="./assets/terminal.svg" width="100%" alt="Terminal session" />
 
@@ -31,52 +34,37 @@ Right now that looks like a C++ server framework, a Monte Carlo engine for tail 
 
 ## The work
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### ⚡ [TitanServer](https://github.com/abhinav0singh/TitanServer) — concurrent C++ server framework
 
-### ⚡ [TitanServer](https://github.com/abhinav0singh/TitanServer)
+`C++17` `std::thread` `CMake`
 
-A high-performance server framework in C++. Fixed-size thread pool, an LRU cache that evicts in O(1), and a request path written to avoid allocations where it can.
+- Load-tested the server and found **~50% of requests failing** — `closesocket()` on a socket with unread data sends a TCP RST instead of a FIN. Fixed with a graceful `shutdown()` + drain; **error rate to zero across 228k requests**.
+- Diagnosed a 15,495-socket TIME_WAIT buildup eating 95% of the OS's ephemeral port range in 15 seconds. Implemented HTTP keep-alive: **3,084 → 42,558 req/s (13.8×)**, **p99 latency 6,691 ms → 15 ms**.
+- Profiled the remaining hot path to a mutex-guarded `std::cout` flush on every request. Gated logs behind an atomic level check: **5,138 → 59,182 req/s (11.5×)** on static file serving.
+- Documented the fixed-thread-pool ceiling (8 threads → 8 concurrent connections, the C10K wall). Next step: IOCP-based event-driven I/O.
 
-Built to answer a question I kept asking other people's frameworks: *where does the time actually go?*
+<br>
 
-`C++` `concurrency` `caching`
+### 🏦 [Banking Ledger](https://github.com/abhinav0singh/BankingTransactionSystem) — RESTful payments backend
 
-</td>
-<td width="50%" valign="top">
+`Node.js` `Express` `MongoDB` `JWT` `Nodemailer`
 
-### 📉 [Monte Carlo VaR / CVaR](https://github.com/abhinav0singh/Monte-Carlo_VaR_CVaR)
+- Built a RESTful money-movement backend — accounts, transfers, balances — on a modular routes → controllers → services → models architecture, so business logic doesn't know or care how it's transported or stored.
+- Modelled money as an **immutable double-entry ledger**: every transfer writes paired debit/credit entries as the single source of truth. Balances are derived, never mutated, and history stays fully auditable.
+- **Idempotency keys** mean a retried or duplicated request returns the original result instead of double-charging — transfers stay exactly-once safe across retries and flaky networks.
+- Multi-step transfers stay consistent via MongoDB sessions/transactions; balances are derived from ledger records with aggregation pipelines.
+- Stateless JWT auth, bcrypt password hashing, custom validation middleware, protected routes, and Nodemailer for transaction notifications.
 
-Value-at-Risk tells you how bad a normal bad day is. Conditional VaR tells you how bad it gets once you're already having one.
+<details>
+<summary><b>A few other things I've built</b></summary>
 
-This simulates thousands of correlated price paths to estimate both — the part of finance where the interesting number lives in the tail.
+<br>
 
-`Python` `NumPy` `stochastic modelling`
+- [Monte Carlo VaR / CVaR](https://github.com/abhinav0singh/Monte-Carlo_VaR_CVaR) — tail-risk estimation via simulated price paths (`Python`)
+- [Bangalore House Prices](https://github.com/abhinav0singh/Bangalore-house-Price-Prediction) — regression on real, messy listing data (`Jupyter`, `scikit-learn`)
+- [java-visual-memory-trainer](https://github.com/abhinav0singh/java-visual-memory-trainer) — a small memory-training game (`Java`)
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🏦 [Banking Transaction System](https://github.com/abhinav0singh/BankingTransactionSystem)
-
-Accounts, transfers, and the unglamorous discipline of making sure money never quietly disappears between two writes.
-
-`JavaScript` `transactions` `state integrity`
-
-</td>
-<td width="50%" valign="top">
-
-### 🏘️ [Bangalore House Prices](https://github.com/abhinav0singh/Bangalore-house-Price-Prediction)
-
-A regression model on real, messy listing data — where most of the work is cleaning, not fitting. Outlier handling and feature engineering did more for accuracy than any model swap.
-
-`Jupyter` `scikit-learn` `feature engineering`
-
-</td>
-</tr>
-</table>
+</details>
 
 <div align="center">
 <a href="https://github.com/abhinav0singh?tab=repositories"><b>→ All 31 repositories</b></a>
@@ -89,29 +77,27 @@ A regression model on real, messy listing data — where most of the work is cle
 <img src="./assets/stack.svg" width="100%" alt="Language depth" />
 
 <details>
-<summary><b>🔧 Everything else I reach for</b></summary>
+<summary><b>🔧 Everything else, straight off the resume</b></summary>
 
 <br>
 
 | Layer | Tools |
 |---|---|
-| **Systems** | POSIX threads, sockets, CMake, gdb, perf, valgrind |
-| **Data & modelling** | NumPy, pandas, scikit-learn, Matplotlib, Jupyter |
-| **Web** | Node.js, Express, React, REST APIs |
-| **Storage** | MySQL, PostgreSQL, SQLite, schema design & indexing |
-| **Workflow** | Git, GitHub Actions, Linux, VS Code, Docker (learning) |
+| **Backend** | Node.js, Express.js, REST APIs, JWT Authentication |
+| **Databases** | PostgreSQL, MongoDB, Redis |
+| **Tools & practices** | Git, GitHub, Docker, Linux, Postman, unit testing, secure coding |
+| **CS fundamentals** | DSA, OOP, DBMS, Operating Systems, Computer Networks, multithreading & concurrency, SDLC, Agile |
 
 </details>
 
 <details>
-<summary><b>📚 What I'm working through right now</b></summary>
+<summary><b>📚 What's next</b></summary>
 
 <br>
 
-- **Lock-free data structures** — atomics, memory ordering, and why `std::memory_order_relaxed` is a loaded gun
-- **Option greeks** — extending the risk engine past plain VaR into sensitivity
-- **Transformers from scratch** — attention implemented by hand before touching a framework
-- **Query planning** — reading `EXPLAIN` output like it's a stack trace
+- **IOCP-based event-driven I/O** — breaking TitanServer past the fixed-thread-pool C10K ceiling
+- **Ledger v2** — deeper audit trails on top of the double-entry model
+- **The next 100 on LeetCode** — 300+ solved and counting
 
 </details>
 
@@ -120,7 +106,7 @@ A regression model on real, messy listing data — where most of the work is cle
 
 <br>
 
-**Measure before optimising.** A profiler has corrected me more often than my intuition has been right.
+**Measure before optimising.** Every number on this page came from a profiler, not a guess.
 
 **Small, reviewable commits.** Future-me is a stranger with no context and no patience.
 
@@ -134,19 +120,13 @@ A regression model on real, messy listing data — where most of the work is cle
 
 ## The record
 
-<div align="center">
+<img src="./assets/stats.svg" width="100%" alt="GitHub stats" />
 
-<img src="https://github-readme-stats.vercel.app/api?username=abhinav0singh&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&title_color=3DDCF0&icon_color=56E39F&text_color=8AA0C2&bg_color=080D18&border_radius=14" height="165" alt="GitHub stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhinav0singh&layout=compact&hide_border=true&langs_count=8&title_color=3DDCF0&text_color=8AA0C2&bg_color=080D18&border_radius=14" height="165" alt="Top languages" />
+<br>
 
-<br><br>
+<img src="./assets/skyline.svg" width="100%" alt="A year of contributions, drawn as a skyline" />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abhinav0singh/abhinav0singh/output/snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/abhinav0singh/abhinav0singh/output/snake.svg" width="100%" alt="Contribution snake" />
-</picture>
-
-</div>
+<div align="center"><sub>Each building is one week. Height is how much I shipped. The snake just lives here — it isn't eating anything.</sub></div>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
@@ -154,14 +134,14 @@ A regression model on real, messy listing data — where most of the work is cle
 
 <div align="center">
 
-If you're building something that has to be fast, or something where the tail matters — I'd like to hear about it.
+If you're building something that has to stay up, or a ledger that has to stay right — I'd like to hear about it.
 
 <br>
 
+<a href="https://github.com/abhinav0singh"><img src="https://img.shields.io/badge/GitHub-0A1120?style=for-the-badge&logo=github&logoColor=56E39F" alt="GitHub" /></a>
 <a href="https://www.linkedin.com/in/abhinav-singh-007-india/"><img src="https://img.shields.io/badge/LinkedIn-0A1120?style=for-the-badge&logo=linkedin&logoColor=3DDCF0" alt="LinkedIn" /></a>
-<a href="mailto:abhinavtribhuvanvedsingh@gmail.com"><img src="https://img.shields.io/badge/Email-0A1120?style=for-the-badge&logo=gmail&logoColor=FF5C8A" alt="Email" /></a>
-<a href="https://twitter.com/YOUR-HANDLE"><img src="https://img.shields.io/badge/Twitter-0A1120?style=for-the-badge&logo=x&logoColor=E6EDF6" alt="Twitter" /></a>
-<a href="https://github.com/abhinav0singh?tab=repositories"><img src="https://img.shields.io/badge/Repositories-0A1120?style=for-the-badge&logo=github&logoColor=56E39F" alt="Repositories" /></a>
+<a href="https://leetcode.com/u/0eLVhF6Gzs/"><img src="https://img.shields.io/badge/LeetCode-0A1120?style=for-the-badge&logo=leetcode&logoColor=22B8CF" alt="LeetCode" /></a>
+<a href="mailto:abhinavsingh0176@gmail.com"><img src="https://img.shields.io/badge/Email-0A1120?style=for-the-badge&logo=gmail&logoColor=D7263D" alt="Email" /></a>
 
 </div>
 
