@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 290" width="880" height="290" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+<defs><clipPath id="sf"><rect width="880" height="290" rx="14"/></clipPath></defs>
+<g clip-path="url(#sf)">
+<rect width="880" height="290" fill="#080D18"/>
+<text x="26" y="34" font-size="12" letter-spacing="3.4" fill="#5E769B">DEPTH BY LANGUAGE — SELF-REPORTED, HONESTLY</text>
+<text x="26" y="69" font-size="14" font-weight="600" fill="#E6EDF6">C++</text>
+<rect x="168" y="53" width="470" height="16" rx="8" fill="#111B2E"/>
+<rect x="168" y="53" width="432" height="16" rx="8" fill="#3DDCF0" opacity="0.85">
+<animate attributeName="width" values="0;432" dur="1.5s" begin="0.00s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></rect>
+<rect x="597" y="51" width="3" height="20" rx="1.5" fill="#3DDCF0"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></rect>
+<text x="656" y="68" font-size="12" fill="#7C93B8">systems, lock-free, perf</text>
+<text x="26" y="115" font-size="14" font-weight="600" fill="#E6EDF6">Python</text>
+<rect x="168" y="99" width="470" height="16" rx="8" fill="#111B2E"/>
+<rect x="168" y="99" width="414" height="16" rx="8" fill="#56E39F" opacity="0.85">
+<animate attributeName="width" values="0;414" dur="1.5s" begin="0.16s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></rect>
+<rect x="579" y="97" width="3" height="20" rx="1.5" fill="#56E39F"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></rect>
+<text x="656" y="114" font-size="12" fill="#7C93B8">quant models, ML, tooling</text>
+<text x="26" y="161" font-size="14" font-weight="600" fill="#E6EDF6">JavaScript</text>
+<rect x="168" y="145" width="470" height="16" rx="8" fill="#111B2E"/>
+<rect x="168" y="145" width="348" height="16" rx="8" fill="#FFB454" opacity="0.85">
+<animate attributeName="width" values="0;348" dur="1.5s" begin="0.32s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></rect>
+<rect x="513" y="143" width="3" height="20" rx="1.5" fill="#FFB454"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></rect>
+<text x="656" y="160" font-size="12" fill="#7C93B8">full-stack, dashboards</text>
+<text x="26" y="207" font-size="14" font-weight="600" fill="#E6EDF6">Java</text>
+<rect x="168" y="191" width="470" height="16" rx="8" fill="#111B2E"/>
+<rect x="168" y="191" width="310" height="16" rx="8" fill="#FF5C8A" opacity="0.85">
+<animate attributeName="width" values="0;310" dur="1.5s" begin="0.48s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></rect>
+<rect x="475" y="189" width="3" height="20" rx="1.5" fill="#FF5C8A"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></rect>
+<text x="656" y="206" font-size="12" fill="#7C93B8">OOP, desktop, JVM internals</text>
+<text x="26" y="253" font-size="14" font-weight="600" fill="#E6EDF6">SQL</text>
+<rect x="168" y="237" width="470" height="16" rx="8" fill="#111B2E"/>
+<rect x="168" y="237" width="329" height="16" rx="8" fill="#A88BFA" opacity="0.85">
+<animate attributeName="width" values="0;329" dur="1.5s" begin="0.64s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></rect>
+<rect x="494" y="235" width="3" height="20" rx="1.5" fill="#A88BFA"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></rect>
+<text x="656" y="252" font-size="12" fill="#7C93B8">schema design, query tuning</text>
+<rect width="880" height="290" rx="14" fill="none" stroke="#1E2C46" stroke-width="1.5"/>
+</g></svg>

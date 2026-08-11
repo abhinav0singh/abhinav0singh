@@ -1,116 +1,168 @@
-<div align="center">
+<img src="./assets/hero.svg" alt="Abhinav Singh — systems, quantitative risk, machine learning" width="100%" />
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Hey,%20I'm%20Abhinav%20👋&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Builder%20of%20fast%20systems%20%7C%20Quant%20%2B%20ML%20tinkerer&descAlignY=58&descSize=18" width="100%"/>
-
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&duration=2500&pause=800&color=F7A8B8&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=C%2B%2B+%7C+Python+%7C+JavaScript;Building+TitanServer+⚡;Modeling+Risk+with+Monte+Carlo+📊;Always+shipping+something+new+🚀" alt="Typing SVG" />
-
-</div>
-
-<br>
-
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="100%" height="4">
-
-## 🌈 About Me
-
-```yaml
-name: Abhinav Singh
-role: Software Engineer
-currently_building: TitanServer 🔧
-exploring: Quant Finance & Machine Learning 📈
-languages: [C++, Python, JavaScript, Java, SQL]
-fun_fact: "I turn coffee ☕ into high-performance code"
-```
-
-<br>
-
-## 🛠️ Tech Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=cpp,python,js,java,html,css,sql,git,vscode,linux&theme=light" />
-
-</div>
-
-<br>
-
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="100%" height="4">
-
-## 🚀 Featured Projects
+<img src="./assets/divider.svg" width="100%" alt="" />
 
 <table>
 <tr>
-<td width="50%">
+<td width="30%" align="center">
 
-### 🏎️ [TitanServer](https://github.com/abhinav0singh/TitanServer)
-High-performance C++ server framework with thread pool & LRU cache
-![C++](https://img.shields.io/badge/-C++-FF6B6B?style=for-the-badge&logo=cplusplus&logoColor=white)
+<img src="./assets/avatar.png" width="190" alt="Abhinav Singh" />
 
 </td>
-<td width="50%">
+<td width="70%">
 
-### 📊 [Monte-Carlo VaR/CVaR](https://github.com/abhinav0singh/Monte-Carlo_VaR_CVaR)
-Risk estimation via Monte Carlo simulation
-![Python](https://img.shields.io/badge/-Python-4ECDC4?style=for-the-badge&logo=python&logoColor=white)
+### Hello — I'm Abhinav
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+I write software that has to be **fast**, and models that have to be **honest**.
 
-### 🏦 [BankingTransactionSystem](https://github.com/abhinav0singh/BankingTransactionSystem)
-A full transaction processing system
-![JavaScript](https://img.shields.io/badge/-JavaScript-FFD93D?style=for-the-badge&logo=javascript&logoColor=black)
+Those two instincts pull in different directions, which is exactly why I like them. A server that drops p99 latency by 40% and a risk model that admits how much it doesn't know are the same craft wearing different clothes: you measure, you don't flatter yourself, and you ship the version you can defend.
 
-</td>
-<td width="50%">
+Right now that looks like a C++ server framework, a Monte Carlo engine for tail risk, and a slow, stubborn walk through machine learning.
 
-### 🏡 [House Price Prediction](https://github.com/abhinav0singh/Bangalore-house-Price-Prediction)
-ML model predicting Bangalore housing prices
-![ML](https://img.shields.io/badge/-Machine%20Learning-A685E2?style=for-the-badge&logo=jupyter&logoColor=white)
+**Open to** internships, backend / systems roles, and quant-adjacent engineering.
 
 </td>
 </tr>
 </table>
 
-<br>
+<img src="./assets/terminal.svg" width="100%" alt="Terminal session" />
 
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="100%" height="4">
+<img src="./assets/divider.svg" width="100%" alt="" />
 
-## 📈 GitHub Stats
+## The work
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### ⚡ [TitanServer](https://github.com/abhinav0singh/TitanServer)
+
+A high-performance server framework in C++. Fixed-size thread pool, an LRU cache that evicts in O(1), and a request path written to avoid allocations where it can.
+
+Built to answer a question I kept asking other people's frameworks: *where does the time actually go?*
+
+`C++` `concurrency` `caching`
+
+</td>
+<td width="50%" valign="top">
+
+### 📉 [Monte Carlo VaR / CVaR](https://github.com/abhinav0singh/Monte-Carlo_VaR_CVaR)
+
+Value-at-Risk tells you how bad a normal bad day is. Conditional VaR tells you how bad it gets once you're already having one.
+
+This simulates thousands of correlated price paths to estimate both — the part of finance where the interesting number lives in the tail.
+
+`Python` `NumPy` `stochastic modelling`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🏦 [Banking Transaction System](https://github.com/abhinav0singh/BankingTransactionSystem)
+
+Accounts, transfers, and the unglamorous discipline of making sure money never quietly disappears between two writes.
+
+`JavaScript` `transactions` `state integrity`
+
+</td>
+<td width="50%" valign="top">
+
+### 🏘️ [Bangalore House Prices](https://github.com/abhinav0singh/Bangalore-house-Price-Prediction)
+
+A regression model on real, messy listing data — where most of the work is cleaning, not fitting. Outlier handling and feature engineering did more for accuracy than any model swap.
+
+`Jupyter` `scikit-learn` `feature engineering`
+
+</td>
+</tr>
+</table>
 
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=abhinav0singh&show_icons=true&theme=radical&hide_border=true&bg_color=00000000&count_private=true" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=abhinav0singh&theme=radical&hide_border=true&background=00000000" width="48%" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhinav0singh&layout=compact&theme=radical&hide_border=true&bg_color=00000000" width="50%" />
-
+<a href="https://github.com/abhinav0singh?tab=repositories"><b>→ All 31 repositories</b></a>
 </div>
 
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+## The toolkit
+
+<img src="./assets/stack.svg" width="100%" alt="Language depth" />
+
+<details>
+<summary><b>🔧 Everything else I reach for</b></summary>
+
 <br>
 
-## 🏆 Trophies
+| Layer | Tools |
+|---|---|
+| **Systems** | POSIX threads, sockets, CMake, gdb, perf, valgrind |
+| **Data & modelling** | NumPy, pandas, scikit-learn, Matplotlib, Jupyter |
+| **Web** | Node.js, Express, React, REST APIs |
+| **Storage** | MySQL, PostgreSQL, SQLite, schema design & indexing |
+| **Workflow** | Git, GitHub Actions, Linux, VS Code, Docker (learning) |
 
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=abhinav0singh&theme=radical&no-frame=true&margin-w=10&row=1" />
-</div>
+</details>
+
+<details>
+<summary><b>📚 What I'm working through right now</b></summary>
 
 <br>
 
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="100%" height="4">
+- **Lock-free data structures** — atomics, memory ordering, and why `std::memory_order_relaxed` is a loaded gun
+- **Option greeks** — extending the risk engine past plain VaR into sensitivity
+- **Transformers from scratch** — attention implemented by hand before touching a framework
+- **Query planning** — reading `EXPLAIN` output like it's a stack trace
 
-## 🤝 Let's Connect
+</details>
+
+<details>
+<summary><b>🧭 How I like to work</b></summary>
+
+<br>
+
+**Measure before optimising.** A profiler has corrected me more often than my intuition has been right.
+
+**Small, reviewable commits.** Future-me is a stranger with no context and no patience.
+
+**Write it down.** If a design decision isn't in the README, it didn't happen.
+
+**Boring is a feature.** Clever code is a debt you pay at 2 a.m.
+
+</details>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+## The record
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-handle)
-[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/your-handle)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
+<img src="https://github-readme-stats.vercel.app/api?username=abhinav0singh&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&title_color=3DDCF0&icon_color=56E39F&text_color=8AA0C2&bg_color=080D18&border_radius=14" height="165" alt="GitHub stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhinav0singh&layout=compact&hide_border=true&langs_count=8&title_color=3DDCF0&text_color=8AA0C2&bg_color=080D18&border_radius=14" height="165" alt="Top languages" />
 
 <br><br>
 
-![Profile Views](https://komarev.com/ghpvc/?username=abhinav0singh&color=blueviolet&style=for-the-badge&label=PROFILE+VIEWS)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abhinav0singh/abhinav0singh/output/snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/abhinav0singh/abhinav0singh/output/snake.svg" width="100%" alt="Contribution snake" />
+</picture>
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+## Get in touch
+
+<div align="center">
+
+If you're building something that has to be fast, or something where the tail matters — I'd like to hear about it.
+
+<br>
+
+<a href="https://www.linkedin.com/in/abhinav-singh-007-india/"><img src="https://img.shields.io/badge/LinkedIn-0A1120?style=for-the-badge&logo=linkedin&logoColor=3DDCF0" alt="LinkedIn" /></a>
+<a href="mailto:abhinavtribhuvanvedsingh@gmail.com"><img src="https://img.shields.io/badge/Email-0A1120?style=for-the-badge&logo=gmail&logoColor=FF5C8A" alt="Email" /></a>
+<a href="https://twitter.com/YOUR-HANDLE"><img src="https://img.shields.io/badge/Twitter-0A1120?style=for-the-badge&logo=x&logoColor=E6EDF6" alt="Twitter" /></a>
+<a href="https://github.com/abhinav0singh?tab=repositories"><img src="https://img.shields.io/badge/Repositories-0A1120?style=for-the-badge&logo=github&logoColor=56E39F" alt="Repositories" /></a>
+
+</div>
+
+<img src="./assets/footer.svg" width="100%" alt="Still shipping. Still measuring." />
