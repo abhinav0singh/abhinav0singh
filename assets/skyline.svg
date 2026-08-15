@@ -419,17 +419,20 @@
 <polygon points="493.0,309.4 501.6,305.1 501.6,283.3 493.0,287.6" fill="#0E432C"/>
 <polygon points="493.0,279.0 501.6,283.3 493.0,287.6 484.4,283.3" fill="#598874"/>
 <polygon points="467.2,305.1 475.8,309.4 467.2,313.7 458.6,309.4" fill="#141B29" opacity="0.9"/>
-<polygon points="484.4,305.1 493.0,309.4 484.4,313.7 475.8,309.4" fill="#141B29" opacity="0.9"/></g>
+<polygon points="475.8,309.4 484.4,313.7 484.4,291.9 475.8,287.6" fill="#0A2F1F"/>
+<polygon points="484.4,313.7 493.0,309.4 493.0,287.6 484.4,291.9" fill="#0E432C"/>
+<polygon points="484.4,283.3 493.0,287.6 484.4,291.9 475.8,287.6" fill="#598874"/>
+<polygon points="475.8,309.4 484.4,313.7 475.8,318.0 467.2,313.7" fill="#141B29" opacity="0.9"/></g>
 
 <g>
  <rect x="282.0" y="6" width="268" height="122" rx="12" fill="#0A1120" stroke="#1E2C46" stroke-width="1"/>
  <text x="300.0" y="32" font-size="12" letter-spacing="1.6" fill="#7C93B8">CONTRIBUTIONS</text>
- <text x="300.0" y="64" font-size="25" font-weight="700" fill="#3DDC84">77</text>
+ <text x="300.0" y="64" font-size="25" font-weight="700" fill="#3DDC84">78</text>
  <text x="300.0" y="81" font-size="9" letter-spacing="0.6" fill="#7C93B8">TOTAL</text>
  <text x="300.0" y="96" font-size="9" fill="#4C6182">past year</text>
- <text x="390.0" y="64" font-size="25" font-weight="700" fill="#E6EDF6">10</text>
+ <text x="390.0" y="64" font-size="25" font-weight="700" fill="#E6EDF6">11</text>
  <text x="390.0" y="81" font-size="9" letter-spacing="0.6" fill="#7C93B8">THIS WEEK</text>
- <text x="390.0" y="96" font-size="9" fill="#4C6182">Aug 14</text>
+ <text x="390.0" y="96" font-size="9" fill="#4C6182">Aug 15</text>
  <text x="480.0" y="64" font-size="25" font-weight="700" fill="#E6EDF6">9</text>
  <text x="480.0" y="81" font-size="9" letter-spacing="0.6" fill="#7C93B8">BEST DAY</text>
  <text x="480.0" y="96" font-size="9" fill="#4C6182">Feb 28</text>
@@ -445,6 +448,6 @@
  <text x="22" y="325.0" font-size="8.5" fill="#4C6182">Jun 11 → Jun 14</text>
  <text x="134" y="296.0" font-size="22" font-weight="700" fill="#E6EDF6">0d</text>
  <text x="134" y="312.0" font-size="9" letter-spacing="0.6" fill="#7C93B8">CURRENT</text>
- <text x="134" y="325.0" font-size="8.5" fill="#4C6182">— → Aug 14</text>
+ <text x="134" y="325.0" font-size="8.5" fill="#4C6182">— → Aug 15</text>
 </g>
 </svg>
