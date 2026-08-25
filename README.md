@@ -86,17 +86,6 @@ Also shipped: [Monte Carlo VaR/CVaR](https://github.com/abhinav0singh/Monte-Carl
 
 ---
 
-## 🐍 Contribution snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abhinav0singh/abhinav0singh/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abhinav0singh/abhinav0singh/output/github-contribution-grid-snake.svg" />
-  <img alt="a snake eating the contribution graph" src="https://raw.githubusercontent.com/abhinav0singh/abhinav0singh/output/github-contribution-grid-snake.svg" width="100%"/>
-</picture>
-
-<sub>Rebuilt daily by <a href=".github/workflows/snake.yml">.github/workflows/snake.yml</a> — the image appears after the workflow runs once (see setup notes below).</sub>
-
----
 
 ## 🌆 A year in contributions
 
