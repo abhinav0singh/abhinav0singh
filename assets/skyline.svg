@@ -420,7 +420,9 @@
 <polygon points="484.4,296.5 493.0,300.8 493.0,280.4 484.4,276.1" fill="#092C1D"/>
 <polygon points="493.0,300.8 501.6,296.5 501.6,276.1 493.0,280.4" fill="#0E3F2A"/>
 <polygon points="493.0,271.8 501.6,276.1 493.0,280.4 484.4,276.1" fill="#598572"/>
-<polygon points="510.2,292.2 518.8,296.5 510.2,300.8 501.6,296.5" fill="#141B29" opacity="0.9"/>
+<polygon points="501.6,296.5 510.2,300.8 510.2,280.4 501.6,276.1" fill="#092C1D"/>
+<polygon points="510.2,300.8 518.8,296.5 518.8,276.1 510.2,280.4" fill="#0E3F2A"/>
+<polygon points="510.2,271.8 518.8,276.1 510.2,280.4 501.6,276.1" fill="#598572"/>
 <polygon points="450.0,296.5 458.6,300.8 450.0,305.1 441.4,300.8" fill="#141B29" opacity="0.9"/>
 <polygon points="458.6,300.8 467.2,305.1 467.2,284.7 458.6,280.4" fill="#092C1D"/>
 <polygon points="467.2,305.1 475.8,300.8 475.8,280.4 467.2,284.7" fill="#0E3F2A"/>
@@ -443,10 +445,10 @@
 <g>
  <rect x="282.0" y="6" width="268" height="122" rx="12" fill="#0A1120" stroke="#1E2C46" stroke-width="1"/>
  <text x="300.0" y="32" font-size="12" letter-spacing="1.6" fill="#7C93B8">CONTRIBUTIONS</text>
- <text x="300.0" y="64" font-size="25" font-weight="700" fill="#3DDC84">100</text>
+ <text x="300.0" y="64" font-size="25" font-weight="700" fill="#3DDC84">101</text>
  <text x="300.0" y="81" font-size="9" letter-spacing="0.6" fill="#7C93B8">TOTAL</text>
  <text x="300.0" y="96" font-size="9" fill="#4C6182">past year</text>
- <text x="390.0" y="64" font-size="25" font-weight="700" fill="#E6EDF6">16</text>
+ <text x="390.0" y="64" font-size="25" font-weight="700" fill="#E6EDF6">17</text>
  <text x="390.0" y="81" font-size="9" letter-spacing="0.6" fill="#7C93B8">THIS WEEK</text>
  <text x="390.0" y="96" font-size="9" fill="#4C6182">Aug 25</text>
  <text x="480.0" y="64" font-size="25" font-weight="700" fill="#E6EDF6">11</text>
@@ -459,11 +461,11 @@
 <g>
  <rect x="6" y="242.0" width="224" height="90" rx="12" fill="#0A1120" stroke="#1E2C46" stroke-width="1"/>
  <text x="22" y="266.0" font-size="12" letter-spacing="1.6" fill="#7C93B8">STREAKS</text>
- <text x="22" y="296.0" font-size="22" font-weight="700" fill="#3DDC84">14d</text>
+ <text x="22" y="296.0" font-size="22" font-weight="700" fill="#3DDC84">15d</text>
  <text x="22" y="312.0" font-size="9" letter-spacing="0.6" fill="#7C93B8">LONGEST</text>
- <text x="22" y="325.0" font-size="8.5" fill="#4C6182">Aug 11 → Aug 24</text>
- <text x="134" y="296.0" font-size="22" font-weight="700" fill="#E6EDF6">0d</text>
+ <text x="22" y="325.0" font-size="8.5" fill="#4C6182">Aug 11 → Aug 25</text>
+ <text x="134" y="296.0" font-size="22" font-weight="700" fill="#E6EDF6">15d</text>
  <text x="134" y="312.0" font-size="9" letter-spacing="0.6" fill="#7C93B8">CURRENT</text>
- <text x="134" y="325.0" font-size="8.5" fill="#4C6182">— → Aug 25</text>
+ <text x="134" y="325.0" font-size="8.5" fill="#4C6182">Aug 11 → Aug 25</text>
 </g>
 </svg>
