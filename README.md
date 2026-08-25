@@ -86,21 +86,6 @@ Also shipped: [Monte Carlo VaR/CVaR](https://github.com/abhinav0singh/Monte-Carl
 
 ---
 
-## 📊 By the numbers
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=abhinav0singh&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhinav0singh&layout=compact&theme=tokyonight&hide_border=true"/>
-
-<img src="https://streak-stats.demolab.com/?user=abhinav0singh&theme=tokyonight&hide_border=true"/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=abhinav0singh&theme=tokyonight&no-frame=true&row=1&column=6"/>
-
-</div>
-
----
-
 ## 🐍 Contribution snake
 
 <picture>
