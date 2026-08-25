@@ -33,9 +33,8 @@ Also spend time on quant modelling, ML, and competitive programming.
 </pre>
 
 🎓&nbsp;&nbsp;Manipal Institute of Technology, Bengaluru — CGPA 8.52/10<br/>
-🧑‍🏫&nbsp;&nbsp;Education Lead, Quantus (Quantum Computing Club)<br/>
 📜&nbsp;&nbsp;Certified in Data Analysis, HKUST<br/>
-🏆&nbsp;&nbsp;300+ DSA problems solved · 100+ on LeetCode
+🏆&nbsp;&nbsp;300+ DSA problems solved · 150+ on LeetCode
 
 </td>
 </tr>
